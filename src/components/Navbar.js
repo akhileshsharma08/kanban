@@ -7,7 +7,6 @@ import { HiOutlineBell } from "react-icons/hi";
 import { IoIosArrowDown } from "react-icons/io";
 
 import UserLogo from "../assets/ladyface.png";
-import styled from "styled-components";
 import { FaBars } from "react-icons/fa";
 import "../App.css";
 
@@ -48,18 +47,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-const Bar = styled(FaBars)`
-  color: #0d062d;
-  display: none;
-
-  @media screen and (max-width: 768px) {
-    display: block;
-    position: absolute;
-    top: 0px;
-    right: 0;
-    transform: translate(-100%, 75%);
-    font-size: 1.5rem;
-    cursor: pointer;
-    color: white;
-  }
-`;
