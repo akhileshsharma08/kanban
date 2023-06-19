@@ -84,7 +84,7 @@ const SideNav = () => {
           <hr className="" />
           <div className="projectlist  pt-4 text-slate-500">
             <div className="projectHeading flex justify-between items-center px-2 text-gray-500">
-              <h6 className="text-md font-bold">My Projects</h6>
+              <h6 className={`${!open?"text-sm":""}text-md font-bold`}>My Projects</h6>
               <h5 className="mr-2 p-0.5 rounded ">
                 <MdOutlineAddBox />
               </h5>
@@ -92,14 +92,14 @@ const SideNav = () => {
 
             <ul className=" justify-between items-center mx-2 py-2">
               <div className="flex justify-between items-center  hover:bg-indigo-200 rounded hover:text-gray-900 cursor-pointer">
-                <li className="flex  items-center py-2 cursor-pointer hover:bg-indigo-200 rounded hover:text-gray-900">
+                <li className={` flex  items-center py-2 cursor-pointer hover:bg-indigo-200 rounded hover:text-gray-900`}>
                   {" "}
                   <span className="text-green-500 text-lg font-bold ">
                     <RxDotFilled />
                   </span>{" "}
-                  Mobile App{" "}
+                  <span className={`${!open?" invisible ":"visible"}`}>Mobile App</span> 
                 </li>
-                <p className="mr-2">
+                <p className={`${!open?" -ml-6 ":"visible mr-2"}`}>
                   <FiMoreHorizontal />
                 </p>
               </div>
@@ -109,9 +109,9 @@ const SideNav = () => {
                   <span className="text-orange-500 text-lg font-bold ">
                     <RxDotFilled />
                   </span>
-                  Website Redesign{" "}
+                  <span className={`${!open?" invisible ":"visible"}`}>Website Redesign </span> 
                 </li>
-                <p className="mr-2">
+                <p className={`${!open?" -ml-10 ":"visible mr-2"}`}>
                   <FiMoreHorizontal />
                 </p>
               </div>
@@ -121,9 +121,9 @@ const SideNav = () => {
                   <span className="text-purple-300 text-lg font-bold ">
                     <RxDotFilled />
                   </span>
-                  Design Systems{" "}
+                  <span className={`${!open?" invisible ":"visible"}`}>Design System</span> 
                 </li>
-                <p className="mr-2">
+                <p className={`${!open?" -ml-8 ":"visible mr-2"}`}>
                   <FiMoreHorizontal />
                 </p>
               </div>
@@ -133,27 +133,27 @@ const SideNav = () => {
                   <span className="text-blue-400 text-lg font-bold ">
                     <RxDotFilled />
                   </span>
-                  Wireframes{" "}
+                  <span className={`${!open?" invisible ":"visible"}`}>Wireframes</span> 
                 </li>
-                <p className="mr-2">
+                <p className={`${!open?" ml-14 ":"visible mr-2"}`}>
                   <FiMoreHorizontal />
                 </p>
               </div>
             </ul>
-            <div className="thoughtWrapper">
+            <div className={` ${!open ?"thoughtWrapper invisible":" thoughtWrapper visible mt-6"}`}>
               <div className="thoughtbox bg-zinc-100 rounded-lg text-gray-500 text-center mx-4">
-                <div className="bulbcircle relative ">
+                {/* <div className="bulbcircle relative ">
                   <p className=" absolute   text-2xl ml-20 b-20  font-bold bg-yellow-100 p-2 rounded-full">
                     <FcIdea />
                   </p>
-                </div>
+                </div> */}
 
                 <h5 className="font-semibold text-center text-gray-900 pt-4">
                   Thoughts time
                 </h5>
-                <p>
+                <p className="px-2">
                   We don't have nay notice for you, till then you can share your
-                  thoughts with ypur peers.{" "}
+                  thoughts with your peers.{" "}
                 </p>
                 <button className="bg-white px-4 py-2 rounded text-gray-900 m-2">
                   Write a Message

@@ -16,21 +16,21 @@ const Navbar = () => {
   return (
     <>
       <div className="navbar   ">
-        <header class="text-gray-600 body-font  w-full  ">
-          <div class="  flex  p-5  items-center justify-between border-b-2">
+        <header className="text-gray-600 body-font  w-full  ">
+          <div className="  flex  p-5  items-center justify-between border-b-2">
             <input
               type="text"
               placeholder="Search for Anything..."
               className=" ml-4 relative w-1/2 px-8 text-lg py-1 bg-slate-100 rounded"
             />
-            <div class="md:ml-auto flex  items-center text-base justify-center">
-              <span class="mr-5 text-xl cursor-pointer hover:text-gray-400">
+            <div className="md:ml-auto flex  items-center text-base justify-center">
+              <span className="mr-5 text-xl cursor-pointer hover:text-gray-400">
                 <LuCalendarDays />
               </span>
-              <span class="mr-5 text-xl cursor-pointer hover:text-gray-400">
+              <span className="mr-5 text-xl cursor-pointer hover:text-gray-400">
                 <TbMessageDots />
               </span>
-              <span class="mr-5 text-xl cursor-pointer hover:text-gray-400">
+              <span className="mr-5 text-xl cursor-pointer hover:text-gray-400">
                 <HiOutlineBell />
               </span>
             </div>
