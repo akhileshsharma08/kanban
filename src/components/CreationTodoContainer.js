@@ -12,6 +12,7 @@ const CreationTodoContainer = (task,settask,completed,setCompleted) => {
   const [work, setwork] = useState("");
   const [type, settype] = useState("");
 
+
   const handleModal = () => {
     console.log("modal called");
   };
