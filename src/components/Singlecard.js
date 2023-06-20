@@ -12,7 +12,7 @@ const Singlecard = ({item,index}) => {
       <Draggable draggableId={item.id} key={item.id.toString()} index={index} >
       {(provided) => (
         <div
-          className="cradwrapper rounded-lg w-72 mt-4  bg-white"
+          className="cradwrapper rounded-lg w-62 h-42 mt-4  bg-white"
           {...provided.draggableProps}
           {...provided.dragHandleProps}
           ref={provided.innerRef}

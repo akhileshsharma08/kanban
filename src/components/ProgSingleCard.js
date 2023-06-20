@@ -12,7 +12,7 @@ const ProgSingleCard = ({item,index}) => {
     <Draggable draggableId={item.id.toString()} index={index} key={item.id.toString()} >
       {(provided) => (
         <div
-          className="cradwrapper rounded-lg w-72 mt-4  bg-white"
+          className="cradwrapper rounded-lg w-62  mt-4  bg-white"
           {...provided.draggableProps}
           {...provided.dragHandleProps}
           ref={provided.innerRef}
@@ -28,7 +28,7 @@ const ProgSingleCard = ({item,index}) => {
             </ul>
             <div className="textofcard px-1">
               <h6 className="my-2 font-bold capitalize">{item.title}</h6>
-              <img src={item.img} alt="user pics" width={'w-full'} height={50} className="my-2" />
+              <img src={item.img} alt="user pics" width={'w-full'} height={40} className="my-2" />
             </div>
             <ul className="flex justify-around items-center my-2 text-gray-500">
                 <li className="">
